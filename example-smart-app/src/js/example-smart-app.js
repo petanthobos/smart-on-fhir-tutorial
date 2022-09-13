@@ -32,7 +32,7 @@
 
         $.when(pt, obv, alin).fail(onError);
 
-        $.when(pt, obv, alin).done(function(patient, obv) {
+        $.when(pt, obv, alin).done(function(patient, obv, alin) {
           Console.log(alin);
           var byCodes = smart.byCodes(obv, 'code');
           var gender = patient.gender;
