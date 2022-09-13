@@ -72,7 +72,9 @@
           p.temperature = getQuantityValueAndUnit(temperature[0]);
           
           allergies.foreach(function(allergy){
-            console.log(allergy.code.text);
+             if (typeof allergy.code != 'undefined') {
+                console.log(allergy.code.text);
+             }
           })
           
           p.allergies = "";
