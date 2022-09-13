@@ -71,7 +71,7 @@
           p.ldl = getQuantityValueAndUnit(ldl[0]);
           p.temperature = getQuantityValueAndUnit(temperature[0]);
           
-          allergies.foreach(function(allergy){
+          alin.foreach(function(allergy){
              if (typeof allergy.code != 'undefined') {
                 console.log(allergy.code.text);
              }
