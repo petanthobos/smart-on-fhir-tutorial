@@ -15,8 +15,10 @@
                     type: 'Observation',
                     query: {
                       code: {
-                        $or: ['http://loinc.org|8302-2', 'http://loinc.org|2085-9',
-                              'http://loinc.org|2089-1', 'http://loinc.org|85354-9']
+                        $or: ['http://loinc.org|8302-2', //body height 
+                              'http://loinc.org|2085-9', //Cholesterol.in HDL
+                              'http://loinc.org|2089-1', //Cholesterol.in LDL
+                              'http://loinc.org|85354-9'] //Blood pressure panel with all children optional
                       }
                     }
                   });
