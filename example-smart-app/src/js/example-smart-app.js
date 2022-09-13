@@ -71,6 +71,10 @@
           p.ldl = getQuantityValueAndUnit(ldl[0]);
           p.temperature = getQuantityValueAndUnit(temperature[0]);
           
+          allergies.foreach(function(allergy){
+            console.log(allergy.code.text);
+          })
+          
           p.allergies = "";
 
           ret.resolve(p);
